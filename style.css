@@ -1,0 +1,37 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    text-align: center;
+    width: 85%;
+    font-size: 120%;
+    padding: 10px 20px;
+    background-color: rgba(176, 185, 187, 0.963);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  fieldset {
+    width: 60%;
+    border: 2px solid #6d6b6b;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color:white;
+  }
+  legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

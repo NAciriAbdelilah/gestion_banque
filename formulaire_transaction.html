@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Projet Gestion Banque</title>
+        <link rel="stylesheet"  href="style.css">
+        <script src="view.js"></script>
+        <style>
+          h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid #dcdcdc;
+            border-radius: 10px;
+            text-align: left;
+            width: 85%;
+            font-size: 120%;
+            padding: 10px 20px;
+            background-color: rgba(176, 185, 187, 0.963);
+          }
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          fieldset {
+            width: 50%;
+            border: 2px solid #6d6b6b;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color:white;
+          }
+          legend {
+            background-color: #000;
+            color: #fff;
+            padding: 3px 6px;
+          }
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          </style>
+    </head>
+    
+  <body>
+    <div>
+      
+      <strong><h2>Formulaire :  Ajout d'une transaction.</h2></strong>
+      <br>
+  </div>
+      <form id="add-transaction-form" method="post" action="/html/add-transaction">
+        <fieldset>
+          <legend><b>Ajouter une transaction :</legend><br>
+              <table>
+                <tr>
+                    <td><label for="nom_client">Nom Client :</label></td>
+                    <td><input type="text" id="nom_client" name="nom_client" required></td>
+                </tr>
+                <tr>
+                    <td><label for="montant">Montant :</label></td>
+                    <td><input type="number" id="montant" name="montant" step="0.01" required></td>
+                </tr>
+                <tr>
+                  <td><label for="date_execution">Date d'exécution :</label></td>
+                  <td><input type="date" id="date_execution" name="date_execution" required></td>
+              </tr>
+              <tr>
+                <td><label for="emetteur">Nom d'emetteur :</label></td>
+                <td><input type="text" id="emetteur" name="emetteur" required></td>
+            </tr>
+            <tr>
+              <td><label for="destinataire">Nom destinataire :</label></td>
+              <td><input type="text" id="destinataire" name="destinataire" required></td>
+          </tr>
+              </table> 
+                <br><input type="button" value="Retour liste transactions" onclick="window.location = 'http\://localhost:3000/html/all-transactions'">
+                &nbsp; &nbsp;<input type="submit"  value="Ajouter transaction">
+      </form>
+
+  </body>
+
+</html>
